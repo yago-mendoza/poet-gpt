@@ -121,6 +121,34 @@ Porque a conocer en un suelo.
 
 ![architecture](figures/architecture.svg)
 
+## The second half: two pretrained models
+
+The character model learns how the posts sound and never learns Spanish: 3.6 million characters are too few. So the second half of the write-up fine-tunes two models that already read Spanish, scored in bits per character on the same 197 held-out posts:
+
+| | Option A | Option B |
+|---|---|---|
+| Base model | [GPT2-Spanish](https://huggingface.co/DeepESP/gpt2-spanish), 124M, read 11.5 GB of Spanish | [Qwen2.5-1.5B](https://huggingface.co/Qwen/Qwen2.5-1.5B), 1,544M |
+| What training changes | every weight | LoRA rank 16 on every attention and MLP matrix, 1.2% of the weights |
+| Machine | the laptop CPU, bfloat16 autocast, 93 min | a rented RTX 4090, 3.8 min |
+| Bits per character before training | 1.51 | 1.17 |
+| After two passes | 1.13 | 1.05 |
+| On held-out paragraphs that repeat no training text | 1.19 | 1.08 |
+
+The character model sits at 1.72. A fifth of the held-out text repeats the training text verbatim (the poet reposts), so `finetune/eval_split.py` and `finetune/eval_parts.py` score the two parts apart, `finetune/dedup.py` removes repeated paragraphs from the training text for a second round, and `finetune/memo.py` measures the longest verbatim run every sample copies from the training text (none of 180 samples reaches 50 characters).
+
+```bash
+pip install "transformers>=4.45" peft accelerate
+python finetune/option_a.py bench                    # starting loss and step time, before predicting anything
+python finetune/option_a.py train                    # GPT2-Spanish tuned whole
+python finetune/option_b.py train --data <dir>       # Qwen2.5-1.5B with LoRA; <dir> holds train.txt and val.txt
+python finetune/sample_hf.py <model> [--adapter dir] --n 60
+python finetune/memo.py                              # verbatim copying against the training text
+```
+
+On a CPU, load every checkpoint with an explicit `dtype=torch.float32`: version 5 of transformers loads GPT2-Spanish in the float16 it was saved in, and a forward pass is 48 times slower that way.
+
+The Manim figures are `figures/manim/overview.py` and `figures/manim/followup.py`; they set their text in Latin Modern, which `figures/manim/fonts/` expects as the `lmroman10-*` and `lmmono10-regular` OpenType files from CTAN.
+
 ## Run it on your own text
 
 ```bash
