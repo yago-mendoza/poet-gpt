@@ -1,0 +1,10 @@
+# data and outputs never go in the repo: the corpus is not mine to share
+corpus/
+data/*/train.bin
+data/*/val.bin
+data/*/meta.pkl
+out-*/
+tok/
+__pycache__/
+.venv/
+*.pt

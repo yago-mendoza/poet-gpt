@@ -1,0 +1,152 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 760 446" width="760" height="446" font-family="-apple-system,Segoe UI,Helvetica,Arial,sans-serif">
+<title>One chunk, eight training examples</title>
+<style>.bg{fill:#fcfcfb}.t1{fill:#0b0b0b}.t2{fill:#52514e}.t3{fill:#7a7973}.grid{stroke:#e4e3df}.axis{stroke:#9c9b95}.s1{fill:#2a78d6}.s1s{stroke:#2a78d6}.s2{fill:#c96f2a}.s2s{stroke:#c96f2a}.mute{fill:#c9c8c2}.tile{fill:#f1f0ec;stroke:#c9c8c2}.band{fill:#2a78d6;fill-opacity:.10}.on{fill:#ffffff}@media (prefers-color-scheme:dark){.bg{fill:#1a1a19}.t1{fill:#f0efec}.t2{fill:#c3c2b7}.t3{fill:#8f8e88}.grid{stroke:#2e2e2b}.axis{stroke:#7a7973}.s1{fill:#3987e5}.s1s{stroke:#3987e5}.s2{fill:#c96f2a}.s2s{stroke:#c96f2a}.mute{fill:#4a4945}.tile{fill:#262624;stroke:#4a4945}.band{fill:#3987e5;fill-opacity:.14}.on{fill:#ffffff}}</style>
+<rect class="bg" width="760" height="446" rx="8"/>
+<text class="t1" x="24.0" y="34.0" font-size="17" text-anchor="start" font-weight="600">One chunk of block_size + 1 characters holds block_size training examples</text>
+<text class="t2" x="24.0" y="56.0" font-size="12.5" text-anchor="start">block_size = 8, the first nine characters of the training split</text>
+<text class="t2" x="136.0" y="106.0" font-size="12" text-anchor="end">chunk</text>
+<text class="t2" x="136.0" y="136.0" font-size="12" text-anchor="end">integers</text>
+<rect class="tile" x="150" y="84" width="34" height="34" rx="5"/>
+<text class="t1" x="167.0" y="107.0" font-size="16" text-anchor="middle" font-family="ui-monospace,SFMono-Regular,Consolas,Menlo,monospace">L</text>
+<text class="t2" x="167.0" y="136.0" font-size="11.5" text-anchor="middle" font-family="ui-monospace,SFMono-Regular,Consolas,Menlo,monospace">39</text>
+<rect class="tile" x="190" y="84" width="34" height="34" rx="5"/>
+<text class="t1" x="207.0" y="107.0" font-size="16" text-anchor="middle" font-family="ui-monospace,SFMono-Regular,Consolas,Menlo,monospace">o</text>
+<text class="t2" x="207.0" y="136.0" font-size="11.5" text-anchor="middle" font-family="ui-monospace,SFMono-Regular,Consolas,Menlo,monospace">71</text>
+<rect class="tile" x="230" y="84" width="34" height="34" rx="5"/>
+<text class="t1" x="247.0" y="107.0" font-size="16" text-anchor="middle" font-family="ui-monospace,SFMono-Regular,Consolas,Menlo,monospace">s</text>
+<text class="t2" x="247.0" y="136.0" font-size="11.5" text-anchor="middle" font-family="ui-monospace,SFMono-Regular,Consolas,Menlo,monospace">75</text>
+<rect class="tile" x="270" y="84" width="34" height="34" rx="5"/>
+<text class="t1" x="287.0" y="107.0" font-size="16" text-anchor="middle" font-family="ui-monospace,SFMono-Regular,Consolas,Menlo,monospace">␣</text>
+<text class="t2" x="287.0" y="136.0" font-size="11.5" text-anchor="middle" font-family="ui-monospace,SFMono-Regular,Consolas,Menlo,monospace">1</text>
+<rect class="tile" x="310" y="84" width="34" height="34" rx="5"/>
+<text class="t1" x="327.0" y="107.0" font-size="16" text-anchor="middle" font-family="ui-monospace,SFMono-Regular,Consolas,Menlo,monospace">p</text>
+<text class="t2" x="327.0" y="136.0" font-size="11.5" text-anchor="middle" font-family="ui-monospace,SFMono-Regular,Consolas,Menlo,monospace">72</text>
+<rect class="tile" x="350" y="84" width="34" height="34" rx="5"/>
+<text class="t1" x="367.0" y="107.0" font-size="16" text-anchor="middle" font-family="ui-monospace,SFMono-Regular,Consolas,Menlo,monospace">a</text>
+<text class="t2" x="367.0" y="136.0" font-size="11.5" text-anchor="middle" font-family="ui-monospace,SFMono-Regular,Consolas,Menlo,monospace">57</text>
+<rect class="tile" x="390" y="84" width="34" height="34" rx="5"/>
+<text class="t1" x="407.0" y="107.0" font-size="16" text-anchor="middle" font-family="ui-monospace,SFMono-Regular,Consolas,Menlo,monospace">d</text>
+<text class="t2" x="407.0" y="136.0" font-size="11.5" text-anchor="middle" font-family="ui-monospace,SFMono-Regular,Consolas,Menlo,monospace">60</text>
+<rect class="tile" x="430" y="84" width="34" height="34" rx="5"/>
+<text class="t1" x="447.0" y="107.0" font-size="16" text-anchor="middle" font-family="ui-monospace,SFMono-Regular,Consolas,Menlo,monospace">r</text>
+<text class="t2" x="447.0" y="136.0" font-size="11.5" text-anchor="middle" font-family="ui-monospace,SFMono-Regular,Consolas,Menlo,monospace">74</text>
+<rect class="tile" x="470" y="84" width="34" height="34" rx="5"/>
+<text class="t1" x="487.0" y="107.0" font-size="16" text-anchor="middle" font-family="ui-monospace,SFMono-Regular,Consolas,Menlo,monospace">e</text>
+<text class="t2" x="487.0" y="136.0" font-size="11.5" text-anchor="middle" font-family="ui-monospace,SFMono-Regular,Consolas,Menlo,monospace">61</text>
+<line class="s1s" x1="150" y1="76" x2="464" y2="76" stroke-width="2"/>
+<text class="t2" x="150.0" y="70.0" font-size="11.5" text-anchor="start">x: input</text>
+<line class="s2s" x1="190" y1="148" x2="504" y2="148" stroke-width="2"/>
+<text class="t2" x="504.0" y="164.0" font-size="11.5" text-anchor="end">y: x shifted one to the left</text>
+<text class="t1" x="24.0" y="184.0" font-size="13" text-anchor="start" font-weight="600">What the model is asked, position by position</text>
+<text class="t2" x="136.0" y="211.0" font-size="11.5" text-anchor="end" font-family="ui-monospace,SFMono-Regular,Consolas,Menlo,monospace">t = 0</text>
+<rect class="s1" x="150" y="196" width="22" height="22" rx="4"/>
+<text class="on" x="161.0" y="211.5" font-size="12.5" text-anchor="middle" font-family="ui-monospace,SFMono-Regular,Consolas,Menlo,monospace">L</text>
+<text class="t3" x="182.0" y="211.0" font-size="14" text-anchor="middle">›</text>
+<rect class="s2" x="191" y="196" width="22" height="22" rx="4"/>
+<text class="on" x="202.0" y="211.5" font-size="12.5" text-anchor="middle" font-family="ui-monospace,SFMono-Regular,Consolas,Menlo,monospace">o</text>
+<text class="t2" x="136.0" y="240.0" font-size="11.5" text-anchor="end" font-family="ui-monospace,SFMono-Regular,Consolas,Menlo,monospace">t = 1</text>
+<rect class="s1" x="150" y="225" width="22" height="22" rx="4"/>
+<text class="on" x="161.0" y="240.5" font-size="12.5" text-anchor="middle" font-family="ui-monospace,SFMono-Regular,Consolas,Menlo,monospace">L</text>
+<rect class="s1" x="175" y="225" width="22" height="22" rx="4"/>
+<text class="on" x="186.0" y="240.5" font-size="12.5" text-anchor="middle" font-family="ui-monospace,SFMono-Regular,Consolas,Menlo,monospace">o</text>
+<text class="t3" x="207.0" y="240.0" font-size="14" text-anchor="middle">›</text>
+<rect class="s2" x="216" y="225" width="22" height="22" rx="4"/>
+<text class="on" x="227.0" y="240.5" font-size="12.5" text-anchor="middle" font-family="ui-monospace,SFMono-Regular,Consolas,Menlo,monospace">s</text>
+<text class="t2" x="136.0" y="269.0" font-size="11.5" text-anchor="end" font-family="ui-monospace,SFMono-Regular,Consolas,Menlo,monospace">t = 2</text>
+<rect class="s1" x="150" y="254" width="22" height="22" rx="4"/>
+<text class="on" x="161.0" y="269.5" font-size="12.5" text-anchor="middle" font-family="ui-monospace,SFMono-Regular,Consolas,Menlo,monospace">L</text>
+<rect class="s1" x="175" y="254" width="22" height="22" rx="4"/>
+<text class="on" x="186.0" y="269.5" font-size="12.5" text-anchor="middle" font-family="ui-monospace,SFMono-Regular,Consolas,Menlo,monospace">o</text>
+<rect class="s1" x="200" y="254" width="22" height="22" rx="4"/>
+<text class="on" x="211.0" y="269.5" font-size="12.5" text-anchor="middle" font-family="ui-monospace,SFMono-Regular,Consolas,Menlo,monospace">s</text>
+<text class="t3" x="232.0" y="269.0" font-size="14" text-anchor="middle">›</text>
+<rect class="s2" x="241" y="254" width="22" height="22" rx="4"/>
+<text class="on" x="252.0" y="269.5" font-size="12.5" text-anchor="middle" font-family="ui-monospace,SFMono-Regular,Consolas,Menlo,monospace">␣</text>
+<text class="t2" x="136.0" y="298.0" font-size="11.5" text-anchor="end" font-family="ui-monospace,SFMono-Regular,Consolas,Menlo,monospace">t = 3</text>
+<rect class="s1" x="150" y="283" width="22" height="22" rx="4"/>
+<text class="on" x="161.0" y="298.5" font-size="12.5" text-anchor="middle" font-family="ui-monospace,SFMono-Regular,Consolas,Menlo,monospace">L</text>
+<rect class="s1" x="175" y="283" width="22" height="22" rx="4"/>
+<text class="on" x="186.0" y="298.5" font-size="12.5" text-anchor="middle" font-family="ui-monospace,SFMono-Regular,Consolas,Menlo,monospace">o</text>
+<rect class="s1" x="200" y="283" width="22" height="22" rx="4"/>
+<text class="on" x="211.0" y="298.5" font-size="12.5" text-anchor="middle" font-family="ui-monospace,SFMono-Regular,Consolas,Menlo,monospace">s</text>
+<rect class="s1" x="225" y="283" width="22" height="22" rx="4"/>
+<text class="on" x="236.0" y="298.5" font-size="12.5" text-anchor="middle" font-family="ui-monospace,SFMono-Regular,Consolas,Menlo,monospace">␣</text>
+<text class="t3" x="257.0" y="298.0" font-size="14" text-anchor="middle">›</text>
+<rect class="s2" x="266" y="283" width="22" height="22" rx="4"/>
+<text class="on" x="277.0" y="298.5" font-size="12.5" text-anchor="middle" font-family="ui-monospace,SFMono-Regular,Consolas,Menlo,monospace">p</text>
+<text class="t2" x="136.0" y="327.0" font-size="11.5" text-anchor="end" font-family="ui-monospace,SFMono-Regular,Consolas,Menlo,monospace">t = 4</text>
+<rect class="s1" x="150" y="312" width="22" height="22" rx="4"/>
+<text class="on" x="161.0" y="327.5" font-size="12.5" text-anchor="middle" font-family="ui-monospace,SFMono-Regular,Consolas,Menlo,monospace">L</text>
+<rect class="s1" x="175" y="312" width="22" height="22" rx="4"/>
+<text class="on" x="186.0" y="327.5" font-size="12.5" text-anchor="middle" font-family="ui-monospace,SFMono-Regular,Consolas,Menlo,monospace">o</text>
+<rect class="s1" x="200" y="312" width="22" height="22" rx="4"/>
+<text class="on" x="211.0" y="327.5" font-size="12.5" text-anchor="middle" font-family="ui-monospace,SFMono-Regular,Consolas,Menlo,monospace">s</text>
+<rect class="s1" x="225" y="312" width="22" height="22" rx="4"/>
+<text class="on" x="236.0" y="327.5" font-size="12.5" text-anchor="middle" font-family="ui-monospace,SFMono-Regular,Consolas,Menlo,monospace">␣</text>
+<rect class="s1" x="250" y="312" width="22" height="22" rx="4"/>
+<text class="on" x="261.0" y="327.5" font-size="12.5" text-anchor="middle" font-family="ui-monospace,SFMono-Regular,Consolas,Menlo,monospace">p</text>
+<text class="t3" x="282.0" y="327.0" font-size="14" text-anchor="middle">›</text>
+<rect class="s2" x="291" y="312" width="22" height="22" rx="4"/>
+<text class="on" x="302.0" y="327.5" font-size="12.5" text-anchor="middle" font-family="ui-monospace,SFMono-Regular,Consolas,Menlo,monospace">a</text>
+<text class="t2" x="136.0" y="356.0" font-size="11.5" text-anchor="end" font-family="ui-monospace,SFMono-Regular,Consolas,Menlo,monospace">t = 5</text>
+<rect class="s1" x="150" y="341" width="22" height="22" rx="4"/>
+<text class="on" x="161.0" y="356.5" font-size="12.5" text-anchor="middle" font-family="ui-monospace,SFMono-Regular,Consolas,Menlo,monospace">L</text>
+<rect class="s1" x="175" y="341" width="22" height="22" rx="4"/>
+<text class="on" x="186.0" y="356.5" font-size="12.5" text-anchor="middle" font-family="ui-monospace,SFMono-Regular,Consolas,Menlo,monospace">o</text>
+<rect class="s1" x="200" y="341" width="22" height="22" rx="4"/>
+<text class="on" x="211.0" y="356.5" font-size="12.5" text-anchor="middle" font-family="ui-monospace,SFMono-Regular,Consolas,Menlo,monospace">s</text>
+<rect class="s1" x="225" y="341" width="22" height="22" rx="4"/>
+<text class="on" x="236.0" y="356.5" font-size="12.5" text-anchor="middle" font-family="ui-monospace,SFMono-Regular,Consolas,Menlo,monospace">␣</text>
+<rect class="s1" x="250" y="341" width="22" height="22" rx="4"/>
+<text class="on" x="261.0" y="356.5" font-size="12.5" text-anchor="middle" font-family="ui-monospace,SFMono-Regular,Consolas,Menlo,monospace">p</text>
+<rect class="s1" x="275" y="341" width="22" height="22" rx="4"/>
+<text class="on" x="286.0" y="356.5" font-size="12.5" text-anchor="middle" font-family="ui-monospace,SFMono-Regular,Consolas,Menlo,monospace">a</text>
+<text class="t3" x="307.0" y="356.0" font-size="14" text-anchor="middle">›</text>
+<rect class="s2" x="316" y="341" width="22" height="22" rx="4"/>
+<text class="on" x="327.0" y="356.5" font-size="12.5" text-anchor="middle" font-family="ui-monospace,SFMono-Regular,Consolas,Menlo,monospace">d</text>
+<text class="t2" x="136.0" y="385.0" font-size="11.5" text-anchor="end" font-family="ui-monospace,SFMono-Regular,Consolas,Menlo,monospace">t = 6</text>
+<rect class="s1" x="150" y="370" width="22" height="22" rx="4"/>
+<text class="on" x="161.0" y="385.5" font-size="12.5" text-anchor="middle" font-family="ui-monospace,SFMono-Regular,Consolas,Menlo,monospace">L</text>
+<rect class="s1" x="175" y="370" width="22" height="22" rx="4"/>
+<text class="on" x="186.0" y="385.5" font-size="12.5" text-anchor="middle" font-family="ui-monospace,SFMono-Regular,Consolas,Menlo,monospace">o</text>
+<rect class="s1" x="200" y="370" width="22" height="22" rx="4"/>
+<text class="on" x="211.0" y="385.5" font-size="12.5" text-anchor="middle" font-family="ui-monospace,SFMono-Regular,Consolas,Menlo,monospace">s</text>
+<rect class="s1" x="225" y="370" width="22" height="22" rx="4"/>
+<text class="on" x="236.0" y="385.5" font-size="12.5" text-anchor="middle" font-family="ui-monospace,SFMono-Regular,Consolas,Menlo,monospace">␣</text>
+<rect class="s1" x="250" y="370" width="22" height="22" rx="4"/>
+<text class="on" x="261.0" y="385.5" font-size="12.5" text-anchor="middle" font-family="ui-monospace,SFMono-Regular,Consolas,Menlo,monospace">p</text>
+<rect class="s1" x="275" y="370" width="22" height="22" rx="4"/>
+<text class="on" x="286.0" y="385.5" font-size="12.5" text-anchor="middle" font-family="ui-monospace,SFMono-Regular,Consolas,Menlo,monospace">a</text>
+<rect class="s1" x="300" y="370" width="22" height="22" rx="4"/>
+<text class="on" x="311.0" y="385.5" font-size="12.5" text-anchor="middle" font-family="ui-monospace,SFMono-Regular,Consolas,Menlo,monospace">d</text>
+<text class="t3" x="332.0" y="385.0" font-size="14" text-anchor="middle">›</text>
+<rect class="s2" x="341" y="370" width="22" height="22" rx="4"/>
+<text class="on" x="352.0" y="385.5" font-size="12.5" text-anchor="middle" font-family="ui-monospace,SFMono-Regular,Consolas,Menlo,monospace">r</text>
+<text class="t2" x="136.0" y="414.0" font-size="11.5" text-anchor="end" font-family="ui-monospace,SFMono-Regular,Consolas,Menlo,monospace">t = 7</text>
+<rect class="s1" x="150" y="399" width="22" height="22" rx="4"/>
+<text class="on" x="161.0" y="414.5" font-size="12.5" text-anchor="middle" font-family="ui-monospace,SFMono-Regular,Consolas,Menlo,monospace">L</text>
+<rect class="s1" x="175" y="399" width="22" height="22" rx="4"/>
+<text class="on" x="186.0" y="414.5" font-size="12.5" text-anchor="middle" font-family="ui-monospace,SFMono-Regular,Consolas,Menlo,monospace">o</text>
+<rect class="s1" x="200" y="399" width="22" height="22" rx="4"/>
+<text class="on" x="211.0" y="414.5" font-size="12.5" text-anchor="middle" font-family="ui-monospace,SFMono-Regular,Consolas,Menlo,monospace">s</text>
+<rect class="s1" x="225" y="399" width="22" height="22" rx="4"/>
+<text class="on" x="236.0" y="414.5" font-size="12.5" text-anchor="middle" font-family="ui-monospace,SFMono-Regular,Consolas,Menlo,monospace">␣</text>
+<rect class="s1" x="250" y="399" width="22" height="22" rx="4"/>
+<text class="on" x="261.0" y="414.5" font-size="12.5" text-anchor="middle" font-family="ui-monospace,SFMono-Regular,Consolas,Menlo,monospace">p</text>
+<rect class="s1" x="275" y="399" width="22" height="22" rx="4"/>
+<text class="on" x="286.0" y="414.5" font-size="12.5" text-anchor="middle" font-family="ui-monospace,SFMono-Regular,Consolas,Menlo,monospace">a</text>
+<rect class="s1" x="300" y="399" width="22" height="22" rx="4"/>
+<text class="on" x="311.0" y="414.5" font-size="12.5" text-anchor="middle" font-family="ui-monospace,SFMono-Regular,Consolas,Menlo,monospace">d</text>
+<rect class="s1" x="325" y="399" width="22" height="22" rx="4"/>
+<text class="on" x="336.0" y="414.5" font-size="12.5" text-anchor="middle" font-family="ui-monospace,SFMono-Regular,Consolas,Menlo,monospace">r</text>
+<text class="t3" x="357.0" y="414.0" font-size="14" text-anchor="middle">›</text>
+<rect class="s2" x="366" y="399" width="22" height="22" rx="4"/>
+<text class="on" x="377.0" y="414.5" font-size="12.5" text-anchor="middle" font-family="ui-monospace,SFMono-Regular,Consolas,Menlo,monospace">e</text>
+<rect class="s1" x="470" y="217" width="10" height="10" rx="2"/>
+<text class="t2" x="486.0" y="226.0" font-size="12" text-anchor="start">context the model sees</text>
+<rect class="s2" x="470" y="239" width="10" height="10" rx="2"/>
+<text class="t2" x="486.0" y="248.0" font-size="12" text-anchor="start">character it must predict</text>
+<text class="t2" x="470.0" y="284.0" font-size="12" text-anchor="start">All eight are computed in one forward</text>
+<text class="t2" x="470.0" y="302.0" font-size="12" text-anchor="start">pass: the causal mask hides the future,</text>
+<text class="t2" x="470.0" y="320.0" font-size="12" text-anchor="start">so position t only ever sees 0 … t.</text>
+</svg>

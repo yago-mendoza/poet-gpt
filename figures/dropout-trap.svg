@@ -1,0 +1,21 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 760 236" width="760" height="236" font-family="-apple-system,Segoe UI,Helvetica,Arial,sans-serif">
+<title>The cost of attention dropout on a CPU</title>
+<style>.bg{fill:#fcfcfb}.t1{fill:#0b0b0b}.t2{fill:#52514e}.t3{fill:#7a7973}.grid{stroke:#e4e3df}.axis{stroke:#9c9b95}.s1{fill:#2a78d6}.s1s{stroke:#2a78d6}.s2{fill:#c96f2a}.s2s{stroke:#c96f2a}.mute{fill:#c9c8c2}.tile{fill:#f1f0ec;stroke:#c9c8c2}.band{fill:#2a78d6;fill-opacity:.10}.on{fill:#ffffff}@media (prefers-color-scheme:dark){.bg{fill:#1a1a19}.t1{fill:#f0efec}.t2{fill:#c3c2b7}.t3{fill:#8f8e88}.grid{stroke:#2e2e2b}.axis{stroke:#7a7973}.s1{fill:#3987e5}.s1s{stroke:#3987e5}.s2{fill:#c96f2a}.s2s{stroke:#c96f2a}.mute{fill:#4a4945}.tile{fill:#262624;stroke:#4a4945}.band{fill:#3987e5;fill-opacity:.14}.on{fill:#ffffff}}</style>
+<rect class="bg" width="760" height="236" rx="8"/>
+<text class="t1" x="24.0" y="34.0" font-size="16" text-anchor="start" font-weight="600">Dropout inside attention costs more than the rest of the training step</text>
+<text class="t2" x="24.0" y="55.0" font-size="12.5" text-anchor="start">One training step of the 4.75M model on the CPU, batch 32 × 256 characters, mean of 5 steps</text>
+<text class="t1" x="24.0" y="100.0" font-size="12.5" text-anchor="start">No dropout</text>
+<path class="s1" d="M270.0,87.0 h162.4 a4,4 0 0 1 4,4 v12.0 a4,4 0 0 1 -4,4 h-162.4 z"/>
+<text class="t2" x="442.4" y="101.0" font-size="11.5" text-anchor="start">1,664 ms</text>
+<text class="t1" x="24.0" y="140.0" font-size="12.5" text-anchor="start">Dropout 0.2 everywhere</text>
+<path class="s2" d="M270.0,127.0 h371.1 a4,4 0 0 1 4,4 v12.0 a4,4 0 0 1 -4,4 h-371.1 z"/>
+<text class="t2" x="651.1" y="141.0" font-size="11.5" text-anchor="start">3,751 ms</text>
+<text class="t1" x="24.0" y="180.0" font-size="12.5" text-anchor="start">Dropout 0.2, none inside attention</text>
+<path class="s1" d="M270.0,167.0 h161.6 a4,4 0 0 1 4,4 v12.0 a4,4 0 0 1 -4,4 h-161.6 z"/>
+<text class="t2" x="441.6" y="181.0" font-size="11.5" text-anchor="start">1,656 ms</text>
+<line class="axis" x1="270" y1="80" x2="270" y2="196" stroke-width="1"/>
+<rect class="s1" x="24" y="207" width="10" height="10" rx="2"/>
+<text class="t2" x="40.0" y="216.0" font-size="12" text-anchor="start">fused attention kernel</text>
+<rect class="s2" x="220.4" y="207" width="10" height="10" rx="2"/>
+<text class="t2" x="236.4" y="216.0" font-size="12" text-anchor="start">generic fallback (math) kernel</text>
+</svg>
