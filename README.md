@@ -1,10 +1,33 @@
-# poet-gpt
+<p align="center">
+  <a href="https://infraphysics.net/blog/bits2bricks/predicted-and-measured-costs-of-a-character-level-transformer"><img src="docs/assets/infraphysics.svg" width="72" alt="InfraPhysics"></a>
+</p>
 
-![poet-gpt](assets/cover.jpg)
+<h1 align="center">poet-gpt</h1>
+
+<p align="center">
+  A character-level GPT trained from scratch on a laptop CPU, on the posts of one of my favourite poets.<br>
+  nanoGPT with one line changed, and every cost predicted before the run and checked after it.
+</p>
+
+<p align="center">
+  <a href="LICENSE"><img src="https://img.shields.io/badge/code-MIT-blue" alt="Code: MIT"></a>
+  <a href="https://github.com/karpathy/nanoGPT"><img src="https://img.shields.io/badge/based%20on-nanoGPT-lightgrey" alt="Based on nanoGPT"></a>
+  <img src="https://img.shields.io/badge/hardware-laptop%20CPU-brightgreen" alt="Hardware: a laptop CPU">
+</p>
+
+<p align="center">
+  <b>A side project of <a href="https://infraphysics.net">InfraPhysics</a>.</b>
+  The full write-up, with the figures and the reasoning, is at
+  <a href="https://infraphysics.net/blog/bits2bricks/predicted-and-measured-costs-of-a-character-level-transformer"><b>infraphysics.net</b></a>
+</p>
+
+<p align="center">
+  <img src="assets/cover.jpg" width="820" alt="poet-gpt">
+</p>
+
+---
 
 A character-level GPT trained from scratch on a laptop CPU, on 3.6 million characters of public posts by one of my favourite poets (a Spanish writer). It is [nanoGPT](https://github.com/karpathy/nanoGPT) with one line changed, plus the scripts I used to measure everything before training and check it after.
-
-The full write-up, with the figures and the reasoning, is on InfraPhysics: [Predicted and measured costs of training a character-level transformer on a CPU](https://infraphysics.net/blog/bits2bricks/predicted-and-measured-costs-of-a-character-level-transformer).
 
 **The corpus and the trained weights are not in this repo.** The texts belong to their author, and a model trained on them can reproduce pieces of them. Point the scripts at any folder of `.txt` files (one document per file) and you get the same pipeline on your own text.
 
